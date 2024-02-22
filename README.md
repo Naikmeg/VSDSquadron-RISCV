@@ -19,12 +19,10 @@ I have opted for the Beginner course, where I would be learning about RTL develo
     <br>
 <p align="center">
   <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/d880e374-302d-4250-9d8a-f208a360af78">
-  </p>
-    
-
-
-  
+  </p>  
 </details>
+
+For more information visit the official [website](https://www.vlsisystemdesign.com/vsdsquadronmini/)
 
 
 
