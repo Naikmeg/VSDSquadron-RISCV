@@ -45,24 +45,24 @@ Code:<br>
   <b>2. Yosys Installation </b>
 
 Code:<br>
-` git clone https://github.com/YosysHQ/yosys.git`<br>
-` cd yosys`<br>
-` sudo apt install make`<br>
-` sudo apt-get install build-essential clang bison flex \
+```
+git clone https://github.com/YosysHQ/yosys.git
+cd yosys
+sudo apt install make
+sudo apt-get install build-essential clang bison flex \
     libreadline-dev gawk tcl-dev libffi-dev git \
     graphviz xdot pkg-config python3 libboost-system-dev \
     libboost-python-dev libboost-filesystem-dev zlib1g-dev
-`<br>
-` make config-gcc`<br>
-` make`<br>
-` sudo make install`<br>
-
-
+make config-gcc
+make
+sudo make install
+```
 <p align="left">
-  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/73e1a10e-4b45-446f-bd47-1ada5c274efe">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/cec94b78-5a03-4342-a973-56462845812b">
   </p> 
 
 </details>
+
 
 
 
