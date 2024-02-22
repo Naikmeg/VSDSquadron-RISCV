@@ -7,13 +7,19 @@ I have opted for the Beginner course, where I would be learning about RTL develo
 
 
 
+
 <details>
   <summary><H2>VSDSquadron Mini Board</H2></summary>
+  <br>
   <p align="center">
-  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/062e965b-7abd-4845-b3a5-a8f8d0c1fcc8" width="500" alt="VSDmini">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/878bfd69-dc20-4b37-933a-6ca385541c28">
   </p>
-    <h5>Specifications</h5>
-
+  <hr>
+    <h3><b>Specifications</b></h3>
+    <br>
+<p align="center">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/d880e374-302d-4250-9d8a-f208a360af78">
+  </p>
     
 
 
