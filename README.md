@@ -61,6 +61,27 @@ sudo make install
   <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/cec94b78-5a03-4342-a973-56462845812b">
   </p> 
 
+<b>3. Iverilog Installation </b>
+
+Code:<br>
+`sudo apt-get install iverilog`<br>
+
+<p align="left">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/cea20a5c-f6f1-4f35-9fc3-7d610417f826">
+  </p> 
+
+<b>4. Gtkwave Installation </b>
+
+Code:<br>
+```
+sudo apt update
+sudo apt install gtkwave
+```
+
+<p align="left">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/f1b52500-abac-4a14-8c32-eaa6e0f14b56">
+  </p> 
+
 </details>
 
 
