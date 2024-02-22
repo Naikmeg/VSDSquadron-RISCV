@@ -24,13 +24,44 @@ This repostory will be used for weekly updates of the tasks assigned during the 
 
   ### Meeting was conducted on 16th of February 2024 at 6PM IST
   <hr>
-  <span style="font-size: 30;">Tasks Assigned:</span>
+<b>Tasks Assigned:</b>
 
   * Installation of git
   * Installation of Yosys
   * Installation of iverilog
   * Installation of gtkwave
-  
+
+<hr>
+
+<b>1. Git Installation </b>
+
+Code:<br>
+`sudo apt install git-all`<br>
+
+<p align="left">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/73e1a10e-4b45-446f-bd47-1ada5c274efe">
+  </p> 
+
+  <b>2. Yosys Installation </b>
+
+Code:<br>
+` git clone https://github.com/YosysHQ/yosys.git`<br>
+` cd yosys`<br>
+` sudo apt install make`<br>
+` sudo apt-get install build-essential clang bison flex \
+    libreadline-dev gawk tcl-dev libffi-dev git \
+    graphviz xdot pkg-config python3 libboost-system-dev \
+    libboost-python-dev libboost-filesystem-dev zlib1g-dev
+`<br>
+` make config-gcc`<br>
+` make`<br>
+` sudo make install`<br>
+
+
+<p align="left">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/73e1a10e-4b45-446f-bd47-1ada5c274efe">
+  </p> 
+
 </details>
 
 
