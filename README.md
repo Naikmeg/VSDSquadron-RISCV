@@ -21,16 +21,16 @@ This repostory will be used for weekly updates of the tasks assigned during the 
 
 <details>
   <summary><H4>Task 1</H4></summary>
-  <br>
-  <p align="center">
-  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/878bfd69-dc20-4b37-933a-6ca385541c28">
-  </p>
+
+  ### Meeting was conducted on 16th of February 2024 at 6PM IST
   <hr>
-    <h3><b>Specifications</b></h3>
-    <br>
-<p align="center">
-  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/d880e374-302d-4250-9d8a-f208a360af78">
-  </p>  
+  <span style="font-size: 30;">Tasks Assigned:</span>
+
+  * Installation of git
+  * Installation of Yosys
+  * Installation of iverilog
+  * Installation of gtkwave
+  
 </details>
 
 
