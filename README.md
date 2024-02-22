@@ -102,7 +102,22 @@ To create a block representation to identify :
 <p align="center">
   <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/4bc5b24f-cb64-4d57-b1dd-bf089403cbd8">
   </p> 
- 
+
+  ### Protocol Overview
+<p align="left">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/02dc572d-7191-40f1-9795-3abe2e7416c3">
+  </p> 
+<b>The Idle state refers to that the transmission has not begun.It is represented through a high pulse.The start bit is represented through a 0 pulse and the data is represented through d0 to d7.The following steps are used to transmit the data and receive it.<br></b>
+1.Wait until incoming signal becomes 0 (start bit), then start the sampling tick counter<br>
+2.When tick counter reaches 7 (middle of start bit), clear tick counter and restart<br>
+3.When counter reaches 15 (middle of first data bit), shift bit value into register & restart tick counter<br>
+4. Repeat step 3 (N-1) more times to retrieve the remaining data bits<br>
+
+
+
+
+
+
 
 
 
