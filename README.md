@@ -79,7 +79,7 @@ sudo apt install gtkwave
 ```
 
 <p align="left">
-  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/f1b52500-abac-4a14-8c32-eaa6e0f14b56">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/5815289b-969a-40d2-8b1f-d8e53eaaeb8b">
   </p> 
 
 </details>
