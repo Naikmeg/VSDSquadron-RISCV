@@ -83,6 +83,19 @@ sudo apt install gtkwave
   </p> 
 
 </details>
+<details>
+  <summary><H4>Task 2</H4></summary>
+
+  ### Meeting was conducted on 20th of February 2024 at 6PM IST
+  <hr>
+<b>Tasks Assigned:</b>
+To create a block representation to identify :
+
+* Input Port
+* Input Waveform
+* Output Port
+* Output Waveform
+  <hr>
 
 
 
