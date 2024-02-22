@@ -95,7 +95,15 @@ To create a block representation to identify :
 * Input Waveform
 * Output Port
 * Output Waveform
-  <hr>
+<hr>
+<b><p align="center">
+  Universal Asynchronous Receiver Transmitter Protocol based hardware transmitter
+  </p> </b>
+<p align="center">
+  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/4bc5b24f-cb64-4d57-b1dd-bf089403cbd8">
+  </p> 
+ 
+
 
 
 
