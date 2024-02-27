@@ -1,0 +1,45 @@
+module uart_tx_tb();
+  	reg 	clk_in;
+ 	reg 	[7:0]data_in;
+    reg 	tx_start_i;
+    wire 	tx_o;
+    wire	tx_done_tick_o;
+  
+  
+  uart_tx test(
+  
+    .clk_in(clk_in),
+    .data_in(data_in),
+    .tx_start_i(tx_start_i),
+    .tx_o(tx_o),
+    .tx_done_tick_o(tx_done_tick_o)
+  
+  );
+  
+  always
+  begin
+    clk_in = ~clk_in;
+    #5;
+  end
+  
+  initial begin
+    $dumpfile("dump.vcd");
+  	$dumpvars(1);
+    clk_in = 0;
+    tx_start_i = 1'b0;
+    //data_in = 8'b00000000;
+    #10;
+    tx_start_i = 1'b1;
+    data_in = 8'b10100100; //01001010
+    #8680;
+    tx_start_i = 1'b0;
+    #10;
+    tx_start_i = 1'b1;
+    data_in = 8'b11001100;
+    #8680
+    //tx_start_i = 1'b0;
+    $finish;
+    
+  end
+  
+endmodule
