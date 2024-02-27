@@ -126,7 +126,7 @@ These special bits are <b>(START,DATA,PARITY,STOP)</b> bits.
 <details>
 <summary>Task 3</summary>
 
-  ### Meeting was conducted on 16th of February 2024 at 6PM IST
+  ### Meeting was conducted on 22nd of February 2024 at 6PM IST
   <hr>
 <b>To generate the code and testbench file:</b>
   
