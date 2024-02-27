@@ -98,7 +98,13 @@ To create a block representation to identify :
 <hr>
 <b><p align="center">
   Universal Asynchronous Receiver Transmitter Protocol based hardware transmitter
-  </p> </b>
+  </p> </b><br>
+  <b>Introduction</b>
+  UART transmitter is used here to transmit the serial data to receiver module of other UART device.We input the data in parallel form but it is sended out serially.Transmitter module converts the parallel data into serial bit stream.
+  UART transmits asynchronously which means there is no need to transmit clock signal with the transmitted data.
+Instead of clock, the transmitter transmit data with some special bits to synchronize the sending and receiving inputs.
+These bits define the beginning and end of the data packet so the receiving UART knows when to start and stop reading the bits.
+These special bits are (START,DATA,PARITY,STOP) bits.
 <p align="center">
    <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/f1260241-cae8-4155-8f8e-646bd60c2cf9">
   </p> 
