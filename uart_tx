@@ -1,0 +1,106 @@
+// Code your design here
+module uart_tx
+  (
+    input 	clk_in,
+    input 	[7:0]data_in,
+    input 	tx_start_i,
+    output 	reg tx_o,
+    output	reg tx_done_tick_o
+  );
+  
+  reg 		[1:0] state;
+  reg		[7:0] buffer_data;
+  integer	counter; 
+  integer	bit_counter;
+  
+  initial
+  begin
+    state 			<= 0;
+    buffer_data 	<= 8'b00000000;
+    counter 		<= 0;
+    bit_counter 	<= 0;
+    tx_o 			<= 0;
+    tx_done_tick_o 	<= 0;
+  end
+  
+  always@(posedge clk_in)
+  begin
+    case(state) 
+    	'd0:  //idle
+        begin
+        	tx_o 			<= 'd1;
+          	tx_done_tick_o	<= 'd0;
+          	bit_counter 	<= 0;
+          if(tx_start_i == 1)
+          	begin
+            	state	<= 'd1;
+              	tx_o 	<= 'd0;
+              	buffer_data <= data_in;
+          	end
+        end
+      	'd1:  //start
+        begin
+          if(counter == 868)
+          begin
+          	state 		<= 'd2;
+            tx_o 		<= buffer_data[0];
+            buffer_data	<= {buffer_data[6:0], buffer_data[7]};
+            counter		<= 0;
+          end
+          else
+          begin
+            counter <= counter + 1;
+          end
+        end
+      	'd2:  //data
+        begin
+          
+          tx_o <= buffer_data[0];
+          
+          if(bit_counter <= 7)
+          begin
+            if(counter == 868)
+            begin
+              bit_counter 	<= 0;
+              state 		<= 'd3;
+              tx_o 			<= 'd1;
+              counter 		<= 0;
+            end
+            else
+          	begin
+              	buffer_data	<= {buffer_data[6:0], buffer_data[7]};
+            	counter 	<= counter + 1;
+              	counter 	<= 0;
+          	end
+          end
+          else
+          begin
+            if(counter == 868)
+            begin
+              buffer_data	<= {buffer_data[6:0], buffer_data[7]};
+              bit_counter 	<= bit_counter + 1;
+              counter		<= 0;
+            end
+            else
+          	begin
+            	counter 	<= counter + 1;
+          	end
+          end
+        end
+      	'd3:  //stop
+        begin
+          if(counter == 1736)  //868 * 2
+            begin
+              state				<= 'd0;
+              tx_done_tick_o	<= 'd1;
+              counter 			<= 0;
+            end
+          	else
+            begin
+              counter 			<= counter + 1;
+            end
+        end
+    endcase
+  end
+  
+endmodule
