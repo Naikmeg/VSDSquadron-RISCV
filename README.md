@@ -100,8 +100,10 @@ To create a block representation to identify :
   Universal Asynchronous Receiver Transmitter Protocol based hardware transmitter
   </p> </b>
 <p align="center">
-  <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/4bc5b24f-cb64-4d57-b1dd-bf089403cbd8">
+   <img src="https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/f1260241-cae8-4155-8f8e-646bd60c2cf9">
   </p> 
+
+
 
   ### Protocol Overview
 <p align="left">
@@ -115,7 +117,28 @@ To create a block representation to identify :
 </details>
 <details>
 <summary>Task 3</summary>
+<b>To generate the code and testbench file:</b>
+  
+```
+gedit uart_tx.v
+gedit uart_tx_tb.v
+```
+<b>To simulate iverilog</b>
+```
+iverilog -o uart_wav uart_tx .v uart_tx_tb.v
+```
+<b>To generate waveform</b>
+```
+vvp uart_wav
+gtkwave dump.vcd
+```
+![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
+
+<b>Waveform</b>
+![waveform_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/1f2ab0c8-5bf1-4cd5-a6a4-47d0c470d994)
+
 </details>
+
 
 
 
