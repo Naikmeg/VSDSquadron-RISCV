@@ -20,8 +20,8 @@ Below is the infromation about the VSDsquadron Mini board. For more information 
 This repostory will be used for weekly updates of the tasks assigned during the Internship.
 
 <details>
-  <summary><H4>Task 1</H4></summary>
-
+<summary>Task 1</summary>
+  
   ### Meeting was conducted on 16th of February 2024 at 6PM IST
   <hr>
 <b>Tasks Assigned:</b>
@@ -84,7 +84,7 @@ sudo apt install gtkwave
 
 </details>
 <details>
-  <summary><H4>Task 2</H4></summary>
+  <summary>Task 2</summary>
 
   ### Meeting was conducted on 20th of February 2024 at 6PM IST
   <hr>
@@ -112,9 +112,10 @@ To create a block representation to identify :
 2.When tick counter reaches 7 (middle of start bit), clear tick counter and restart<br>
 3.When counter reaches 15 (middle of first data bit), shift bit value into register & restart tick counter<br>
 4. Repeat step 3 (N-1) more times to retrieve the remaining data bits<br>
-
-
-
+</details>
+<details>
+<summary>Task 3</summary>
+</details>
 
 
 
