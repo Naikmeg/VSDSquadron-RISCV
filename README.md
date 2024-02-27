@@ -18,7 +18,7 @@ Below is the infromation about the VSDsquadron Mini board. For more information 
   </p>  
 </details>
 This repostory will be used for weekly updates of the tasks assigned during the Internship.
-
+<br><br>
 <details>
 <summary>Task 1</summary>
   
