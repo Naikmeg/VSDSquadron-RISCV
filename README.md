@@ -317,12 +317,12 @@ netlist.v :
 
 <details>
   <summary><b>References</b></summary>
-
-  <u>Course</u> -<br> 
-  [VSD](https://www.vlsisystemdesign.com/vsdsquadronmini/](https://www.udemy.com/course/vsd-a-complete-guide-to-install-open-source-eda-tools/)https://www.udemy.com/course/vsd-a-complete-guide-to-install-open-source-eda-tools/) <br>
-  <u>Reference repositories</u> - <br>
-  [vsdflow](https://github.com/kunalg123/vsdflow.git) <br>
-  [sky130RTLDesignAndSynthesisWorkshop](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git) <br>
+<br>
+  
+  <b>Course</b> - [VSD](https://www.vlsisystemdesign.com/vsdsquadronmini/](https://www.udemy.com/course/vsd-a-complete-guide-to-install-open-source-eda-tools/)https://www.udemy.com/course/vsd-a-complete-guide-to-install-open-source-eda-tools/) <br><br>
+  <b>Reference repositories</b> - <br><br>
+  [vsdflow](https://github.com/kunalg123/vsdflow.git) <br><br>
+  [sky130RTLDesignAndSynthesisWorkshop](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git) <br><br>
   [uarttx](https://github.com/jayshah1x/iiitb_uarttx.git) <br>
 </details>
 
