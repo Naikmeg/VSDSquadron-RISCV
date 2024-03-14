@@ -169,6 +169,10 @@ read_verilog uart.v
 ```
 synth -top uart
 ```
+<b>To generate synthesis</b>
+```
+abc -liberty../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+```
 ![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
 
 <b>Waveform</b>
