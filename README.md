@@ -173,6 +173,17 @@ synth -top uart
 ```
 abc -liberty../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 ```
+
+<b>Generate netlist file/b>
+```
+write_verilog -noattr netlist.v
+show
+```
+<b>To open netlist file/b>
+```
+!gedit netlist.v
+show
+```
 ![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
 
 <b>Waveform</b>
