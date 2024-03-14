@@ -315,5 +315,8 @@ netlist.v :
 <b><h3>Since both the waveforms match the synthesis is verified.</h3></b>
 </details>
 
-
+<details>
+  <summary>References</summary>
+  Task 1-
+</details>
 
