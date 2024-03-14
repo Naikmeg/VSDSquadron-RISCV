@@ -128,6 +128,11 @@ These special bits are <b>(START,DATA,PARITY,STOP)</b> bits.
 
   ### Meeting was conducted on 22nd of February 2024 at 6PM IST
   <hr>
+<b>Tasks Assigned:</b>
+
+* Simulation of code and testbench file
+* Generate the waveform
+<hr>
 <b>To generate the code and testbench file:</b>
   
 ```
@@ -153,8 +158,13 @@ gtkwave dump.vcd
 <details>
 <summary>Task 4</summary>
 
-  ### Meeting was conducted on 22nd of February 2024 at 6PM IST
+  ### Meeting was conducted on 1st of March 2024 at 6PM IST
   <hr>
+<b>Tasks Assigned:</b>
+
+* Synthesis using Yosys
+* Verification of netlist using iverilog and gtkwave
+<hr>
 <h3><b>To generate the synthesis file:</b></h3>
 <b>Yosys</b>
 
@@ -218,9 +228,11 @@ netlist.v :
 <details>
 <summary>Task 5</summary>
 
-  ### Meeting was conducted on 22nd of February 2024 at 6PM IST
-  <hr>
-
+  ### Meeting was conducted on 7th of March 2024 at 6PM IST
+   <hr>
+<b>Tasks Assigned:</b>
+Functional verification using verilog netlist and tesbench provided in the reference github repository.
+<hr>
 <h3><b>To simulate and generate waveform:</b></h3>
 <b>iverilog</b> 
 
@@ -273,9 +285,10 @@ iverilog primitives.v sky130_fd_sc_hd.v netlist.v iiitb_uarttx_tb.v iiitb_uarttx
 ```
 gtkwave dump.vcd
 ```
-
+<br>
 <b>Code</b><br><br>
 Yosys:<br>
+
 ![Screenshot from 2024-03-13 18-41-26](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/34aae172-ddf6-4667-b1b9-f3883ad939de)
 
 Synthesis:<br>
