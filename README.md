@@ -146,7 +146,7 @@ gtkwave dump.vcd
 ![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
 
 <b>Waveform</b>
-![waveform_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/1f2ab0c8-5bf1-4cd5-a6a4-47d0c470d994)
+![Screenshot from 2024-03-12 18-21-37](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/02a3b44a-ce7f-49b3-a070-33909993ff81)
 
 </details>
 
@@ -188,11 +188,28 @@ iverilog ../sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/primitives.
 ```
 gtkwave dump.vcd
 ```
-![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
 
-<b>Waveform</b>
-![waveform_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/1f2ab0c8-5bf1-4cd5-a6a4-47d0c470d994)
+<b>Code</b><br><br>
+Yosys:
+![Screenshot from 2024-03-12 18-41-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/14365326-78ca-4262-95bd-7ffe6f864ca6)
 
+Synthesis:
+![Screenshot from 2024-03-12 18-41-30](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/59b2d105-d9d0-485b-8e3a-723a92359d71)
+
+Show Command:
+![Screenshot from 2024-03-12 18-35-34](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/81558ec3-79e6-43ad-8f58-c1c9144c17c3)
+
+iverilog and gtkwave:
+![Screenshot from 2024-03-12 18-42-23](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/c5a93dc5-2fb4-4271-9aec-ecb4909c6289)
+
+<b>Waveform Verification</b><br><br>
+uart_tx.v :
+![Screenshot from 2024-03-12 18-21-37](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/99487d9e-b91b-4428-bb76-a721988298f4)
+
+netlist.v : 
+![Screenshot from 2024-03-12 18-23-33](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/89faf6be-9473-4b81-a59e-710c0975e986)
+
+<b><h3>Since both the waveforms match the synthesis is verified.</h3></b>
 </details>
 
 
