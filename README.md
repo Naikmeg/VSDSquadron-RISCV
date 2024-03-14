@@ -236,7 +236,9 @@ gtkwave dump.vcd
 ```
 ![Screenshot from 2024-03-13 18-41-17](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/4a4dcf93-1c5e-4fe1-88d7-6e51cf220090)
 
-![Screenshot from 2024-03-13 18-34-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/f607bf03-bd81-4880-a9c0-c2914da54cd4)
+![Screenshot from 2024-03-13 18-34-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/5547557c-7377-4e84-a757-0904583dbe52)
+
+
 
 <h3><b>To generate the synthesis file:</b></h3>
 <b>Yosys</b>
@@ -272,25 +274,33 @@ iverilog primitives.v sky130_fd_sc_hd.v netlist.v iiitb_uarttx_tb.v iiitb_uarttx
 gtkwave dump.vcd
 ```
 
-<b>Code</b><br><br>
+<b>Code</b>
+
 Yosys:
-![Screenshot from 2024-03-12 18-41-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/14365326-78ca-4262-95bd-7ffe6f864ca6)
+
+![Screenshot from 2024-03-13 18-41-26](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/34aae172-ddf6-4667-b1b9-f3883ad939de)
 
 Synthesis:
-![Screenshot from 2024-03-12 18-41-30](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/59b2d105-d9d0-485b-8e3a-723a92359d71)
+
+![Screenshot from 2024-03-13 18-41-41](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/a997a6ba-6d7d-48cd-90e1-d0402270bfcc)
 
 Show Command:
-![Screenshot from 2024-03-12 18-35-34](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/81558ec3-79e6-43ad-8f58-c1c9144c17c3)
+
+![Screenshot from 2024-03-13 18-38-36](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/07caeb4f-487f-4309-aca2-9b2bebb30d3e)
 
 iverilog and gtkwave:
-![Screenshot from 2024-03-12 18-42-23](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/c5a93dc5-2fb4-4271-9aec-ecb4909c6289)
+
+![Screenshot from 2024-03-13 18-42-54](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/178670f4-a2d2-4587-b63f-7e0bec3cd8e2)
+
 
 <b>Waveform Verification</b><br><br>
 uart_tx.v :
-![Screenshot from 2024-03-12 18-21-37](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/99487d9e-b91b-4428-bb76-a721988298f4)
 
-netlist.v : 
-![Screenshot from 2024-03-12 18-23-33](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/89faf6be-9473-4b81-a59e-710c0975e986)
+![Screenshot from 2024-03-13 18-34-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/e75903cf-e2cb-4eda-b934-3ca14c7059c6)
+
+netlist.v :
+
+![Screenshot from 2024-03-13 18-40-46](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/a28e197f-8d48-4458-b282-e9430d88b610)
 
 <b><h3>Since both the waveforms match the synthesis is verified.</h3></b>
 </details>
