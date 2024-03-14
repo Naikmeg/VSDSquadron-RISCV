@@ -215,7 +215,85 @@ netlist.v :
 
 
 
+<details>
+<summary>Task 5</summary>
 
+  ### Meeting was conducted on 22nd of February 2024 at 6PM IST
+  <hr>
+
+<h3><b>To simulate and generate waveform:</b></h3>
+<b>iverilog</b> 
+
+```
+git clone iiitb_uarttx
+iverilog iiitb_uart_tx.v iiitb_uart_tx_tb.v
+./a.out
+```
+<b>gtkwave</b> 
+
+```
+gtkwave dump.vcd
+```
+![Screenshot from 2024-03-13 18-41-17](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/4a4dcf93-1c5e-4fe1-88d7-6e51cf220090)
+
+![Screenshot from 2024-03-13 18-34-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/f607bf03-bd81-4880-a9c0-c2914da54cd4)
+
+<h3><b>To generate the synthesis file:</b></h3>
+<b>Yosys</b>
+
+```
+yosys
+```
+<b>Synthesiszing the netlist file</b>
+```
+read_liberty -lib lib/sky130_fd_sc_hd_tt_025C_1v80.libread_verilog iiitb_uarttx.v
+read_verilog uart.v
+synth-top UART_TX
+abc liberty lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+show
+```
+
+<b>Write and view the netlist file</b>
+```
+write_verilog -noattr netlist.v
+!gedit netlist.v
+exit
+```
+<h3><b>Verification using iverilog and gtkwave:</b></h3>
+
+<b>iverilog</b>
+
+```
+iverilog primitives.v sky130_fd_sc_hd.v netlist.v iiitb_uarttx_tb.v iiitb_uarttx_tb.v
+./a.out
+```
+<b> gtkwave</b>
+```
+gtkwave dump.vcd
+```
+
+<b>Code</b><br><br>
+Yosys:
+![Screenshot from 2024-03-12 18-41-10](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/14365326-78ca-4262-95bd-7ffe6f864ca6)
+
+Synthesis:
+![Screenshot from 2024-03-12 18-41-30](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/59b2d105-d9d0-485b-8e3a-723a92359d71)
+
+Show Command:
+![Screenshot from 2024-03-12 18-35-34](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/81558ec3-79e6-43ad-8f58-c1c9144c17c3)
+
+iverilog and gtkwave:
+![Screenshot from 2024-03-12 18-42-23](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/c5a93dc5-2fb4-4271-9aec-ecb4909c6289)
+
+<b>Waveform Verification</b><br><br>
+uart_tx.v :
+![Screenshot from 2024-03-12 18-21-37](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/99487d9e-b91b-4428-bb76-a721988298f4)
+
+netlist.v : 
+![Screenshot from 2024-03-12 18-23-33](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/89faf6be-9473-4b81-a59e-710c0975e986)
+
+<b><h3>Since both the waveforms match the synthesis is verified.</h3></b>
+</details>
 
 
 
