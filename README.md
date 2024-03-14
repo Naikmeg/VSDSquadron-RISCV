@@ -155,34 +155,38 @@ gtkwave dump.vcd
 
   ### Meeting was conducted on 22nd of February 2024 at 6PM IST
   <hr>
-<b>To generate the synthesis file:</b>
-  
+<h3><b>To generate the synthesis file:</b></h3>
+<b>Yosys</b>
+
 ```
+git clone sky130RTLDesignAndSynthesisWorkshop
 yosys
 ```
-<b>To Read the library and files</b>
+<b>Synthesiszing the netlist file</b>
 ```
 read_liberty -lib../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 read_verilog uart.v
-```
-<b>To generate synthesis</b>
-```
 synth -top uart
-```
-<b>To generate synthesis</b>
-```
 abc -liberty../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+show
 ```
 
-<b>Generate netlist file/b>
+<b>Write and view the netlist file</b>
 ```
 write_verilog -noattr netlist.v
-show
-```
-<b>To open netlist file/b>
-```
 !gedit netlist.v
-show
+```
+<h3><b>Verification using iverilog and gtkwave:</b></h3>
+
+<b>iverilog</b>
+
+```
+iverilog ../sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/primitives.v ../sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/sky130_fd_sc_hd.v netlist.v tb_uart.v
+./a.out
+```
+<b> gtkwave</b>
+```
+gtkwave dump.vcd
 ```
 ![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
 
