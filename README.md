@@ -150,6 +150,31 @@ gtkwave dump.vcd
 
 </details>
 
+<details>
+<summary>Task 4</summary>
+
+  ### Meeting was conducted on 22nd of February 2024 at 6PM IST
+  <hr>
+<b>To generate the synthesis file:</b>
+  
+```
+yosys
+```
+<b>To Read the library and files</b>
+```
+read_liberty -lib../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+read_verilog uart.v
+```
+<b>To generate synthesis</b>
+```
+synth -top uart
+```
+![code_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/af4cd40d-7539-457a-a40f-b838c211f4c1)
+
+<b>Waveform</b>
+![waveform_uart](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/1f2ab0c8-5bf1-4cd5-a6a4-47d0c470d994)
+
+</details>
 
 
 
