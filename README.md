@@ -274,14 +274,11 @@ iverilog primitives.v sky130_fd_sc_hd.v netlist.v iiitb_uarttx_tb.v iiitb_uarttx
 gtkwave dump.vcd
 ```
 
-<b>Code</b>
-
-Yosys:
-
+<b>Code</b><br><br>
+Yosys:<br>
 ![Screenshot from 2024-03-13 18-41-26](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/34aae172-ddf6-4667-b1b9-f3883ad939de)
 
-Synthesis:
-
+Synthesis:<br>
 ![Screenshot from 2024-03-13 18-41-41](https://github.com/Naikmeg/VSDSquadron-RISCV/assets/72155259/a997a6ba-6d7d-48cd-90e1-d0402270bfcc)
 
 Show Command:
