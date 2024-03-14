@@ -316,7 +316,13 @@ netlist.v :
 </details>
 
 <details>
-  <summary>References</summary>
-  Task 1-
+  <summary><b>References</b></summary>
+
+  <u>Course</u> -<br> 
+  [VSD](https://www.vlsisystemdesign.com/vsdsquadronmini/](https://www.udemy.com/course/vsd-a-complete-guide-to-install-open-source-eda-tools/)https://www.udemy.com/course/vsd-a-complete-guide-to-install-open-source-eda-tools/) <br>
+  <u>Reference repositories</u> - <br>
+  [vsdflow](https://github.com/kunalg123/vsdflow.git) <br>
+  [sky130RTLDesignAndSynthesisWorkshop](https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git) <br>
+  [uarttx](https://github.com/jayshah1x/iiitb_uarttx.git) <br>
 </details>
 
